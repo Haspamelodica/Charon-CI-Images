@@ -9,6 +9,7 @@ WORKDIR /home/dockeruser
 RUN mkdir -p .m2
 ENV MAVEN_CONFIG=/home/dockeruser/.m2
 
-COPY --chown=dockeruser net.haspamelodica.studentcodeseparator studentcodeseparator
-RUN cd studentcodeseparator/streammultiplexer && mvn install
+COPY --chown=dockeruser studentcodeseparator studentcodeseparator
+COPY --chown=dockeruser streammultiplexer streammultiplexer
+RUN cd streammultiplexer && mvn install
 RUN cd studentcodeseparator/common && mvn install
