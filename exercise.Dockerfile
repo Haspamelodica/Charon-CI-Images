@@ -1,5 +1,6 @@
 FROM ghcr.io/haspamelodica/studentcodeseparator:base
 RUN cd studentcodeseparator/exercise && mvn install
+RUN cd studentcodeseparator/junitextension && mvn install
 
 # Not strictly neccessary because exercise side has internet connection, but speeds up tests.
 # Some of these are (as of writing) newest versions of Surefire and JUnit, some are needed by Surefire.
