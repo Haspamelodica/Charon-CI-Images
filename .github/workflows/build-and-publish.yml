@@ -10,7 +10,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_BASE_NAME: haspamelodica/studentcodeseparator
+  IMAGE_BASE_NAME: haspamelodica/charon
 
 jobs:
   docker:

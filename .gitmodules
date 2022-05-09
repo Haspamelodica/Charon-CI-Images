@@ -1,6 +1,6 @@
-[submodule "studentcodeseparator"]
-	path = studentcodeseparator
-	url = https://github.com/Haspamelodica/net.haspamelodica.studentcodeseparator
+[submodule "Charon"]
+	path = Charon
+	url = https://github.com/Haspamelodica/Charon
 [submodule "streammultiplexer"]
 	path = streammultiplexer
 	url = https://github.com/Haspamelodica/net.haspamelodica.streammultiplexer
