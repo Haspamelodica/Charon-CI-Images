@@ -1,6 +1,7 @@
 FROM ghcr.io/haspamelodica/charon:base
 RUN cd Charon/exercise && mvn install
 RUN cd Charon/junitextension && mvn install
+RUN cd Charon/mockclasses && mvn install
 
 # Not strictly neccessary because exercise side has internet connection, but speeds up tests.
 # Some of these are (as of writing) newest versions of Surefire and JUnit, some are needed by Surefire.
