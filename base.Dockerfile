@@ -1,4 +1,4 @@
-FROM maven:3-openjdk-17
+FROM maven:3-openjdk-19
 
 RUN useradd -m dockeruser
 USER dockeruser
