@@ -1,4 +1,4 @@
-FROM maven:3-openjdk-19
+FROM maven:3-eclipse-temurin-19
 
 RUN useradd -m dockeruser
 USER dockeruser
