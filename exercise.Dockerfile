@@ -1,5 +1,6 @@
 FROM ghcr.io/haspamelodica/charon:base
-RUN cd Charon/exercise && mvn install
+RUN cd Charon/exercise/base && mvn install
+RUN cd Charon/exercise/frontend/ssi && mvn install
 RUN cd Charon/junitextension && mvn install
 RUN cd Charon/mockclasses && mvn install
 
