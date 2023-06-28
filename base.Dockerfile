@@ -13,3 +13,6 @@ COPY --chown=dockeruser Charon Charon
 COPY --chown=dockeruser streammultiplexer streammultiplexer
 RUN cd streammultiplexer && mvn install
 RUN cd Charon/common && mvn install
+# The junitextension can run in samejvm mode, so the exercise side needs Charon/student as well.
+# In practice, though, the code will never be executed.
+RUN cd Charon/student && mvn install

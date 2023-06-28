@@ -12,8 +12,9 @@ RUN ./build_with_gradle.sh streammultiplexer
 RUN ./build_with_gradle.sh Charon/common
 RUN ./build_with_gradle.sh Charon/exercise/base
 RUN ./build_with_gradle.sh Charon/exercise/frontend/ssi
-RUN ./build_with_gradle.sh Charon/exercise/junitextension
 RUN ./build_with_gradle.sh Charon/exercise/frontend/mockclasses
+RUN ./build_with_gradle.sh Charon/exercise/samejvm
+RUN ./build_with_gradle.sh Charon/exercise/junitextension
 
 # This is where the exercise will be mounted to and the run script will be placed
 WORKDIR /data
