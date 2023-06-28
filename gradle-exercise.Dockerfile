@@ -10,6 +10,7 @@ COPY --chown=dockeruser Charon Charon
 COPY --chown=dockeruser streammultiplexer streammultiplexer
 RUN ./build_with_gradle.sh streammultiplexer
 RUN ./build_with_gradle.sh Charon/common
+RUN ./build_with_gradle.sh Charon/student
 RUN ./build_with_gradle.sh Charon/exercise/base
 RUN ./build_with_gradle.sh Charon/exercise/frontend/ssi
 RUN ./build_with_gradle.sh Charon/exercise/frontend/mockclasses
