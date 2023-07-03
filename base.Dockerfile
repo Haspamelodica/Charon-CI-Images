@@ -10,8 +10,8 @@ RUN mkdir -p .m2
 ENV MAVEN_CONFIG=/home/dockeruser/.m2
 
 COPY --chown=dockeruser Charon Charon
-COPY --chown=dockeruser streammultiplexer streammultiplexer
-RUN cd streammultiplexer && mvn install
+COPY --chown=dockeruser exchanges exchanges
+RUN cd exchanges && mvn install
 RUN cd Charon/common && mvn install
 # The junitextension can run in samejvm mode, so the exercise side needs Charon/student as well.
 # In practice, though, the code will never be executed.

@@ -7,8 +7,8 @@ WORKDIR /home/dockeruser
 COPY --chown=dockeruser build_with_gradle.sh build_with_gradle.sh
 
 COPY --chown=dockeruser Charon Charon
-COPY --chown=dockeruser streammultiplexer streammultiplexer
-RUN ./build_with_gradle.sh streammultiplexer
+COPY --chown=dockeruser exchanges exchanges
+RUN ./build_with_gradle.sh exchanges
 RUN ./build_with_gradle.sh Charon/common
 RUN ./build_with_gradle.sh Charon/student
 RUN ./build_with_gradle.sh Charon/exercise/base
