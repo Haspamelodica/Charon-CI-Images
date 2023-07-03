@@ -1,6 +1,6 @@
 [submodule "Charon"]
 	path = Charon
 	url = https://github.com/Haspamelodica/Charon
-[submodule "streammultiplexer"]
-	path = streammultiplexer
-	url = https://github.com/Haspamelodica/net.haspamelodica.streammultiplexer
+[submodule "exchanges"]
+	path = exchanges
+	url = https://github.com/Haspamelodica/net.haspamelodica.exchanges
