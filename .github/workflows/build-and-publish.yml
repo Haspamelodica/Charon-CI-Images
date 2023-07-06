@@ -34,23 +34,23 @@ jobs:
           tags: ghcr.io/${{ env.IMAGE_BASE_NAME }}:base
           push: true
       -
-        name: "Build and push: student-base"
+        name: "Build and push: student"
         uses: docker/build-push-action@v2
         with:
-          file: student-base.Dockerfile
-          tags: ghcr.io/${{ env.IMAGE_BASE_NAME }}:student-base
+          file: student.Dockerfile
+          tags: ghcr.io/${{ env.IMAGE_BASE_NAME }}:student
           push: true
       -
-        name: "Build and push: exercise"
+        name: "Build and push: exercise-maven"
         uses: docker/build-push-action@v2
         with:
-          file: exercise.Dockerfile
-          tags: ghcr.io/${{ env.IMAGE_BASE_NAME }}:exercise
+          file: exercise-maven.Dockerfile
+          tags: ghcr.io/${{ env.IMAGE_BASE_NAME }}:exercise-maven
           push: true
       -
-        name: "Build and push: gradle-exercise"
+        name: "Build and push: exercise-gradle"
         uses: docker/build-push-action@v2
         with:
-          file: gradle-exercise.Dockerfile
-          tags: ghcr.io/${{ env.IMAGE_BASE_NAME }}:gradle-exercise
+          file: exercise-gradle.Dockerfile
+          tags: ghcr.io/${{ env.IMAGE_BASE_NAME }}:exercise-gradle
           push: true
